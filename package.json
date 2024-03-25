@@ -16,7 +16,8 @@
     "@nuxtjs/plausible": "^0.2.4",
     "@types/node": "^20.11.24",
     "eslint": "^8.57.0",
-    "nuxt": "^3.10.3"
+    "nuxt": "^3.10.3",
+    "prettier": "^3.2.5"
   },
   "dependencies": {
     "@nuxthq/studio": "^1.0.13"
