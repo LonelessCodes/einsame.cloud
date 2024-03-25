@@ -41,9 +41,9 @@ jobs:
 
       - name: Build and push
         uses: docker/build-push-action@v5
-        env:
-          NUXT_PUBLIC_STUDIO_TOKENS: ${{ secrets.NUXT_PUBLIC_STUDIO_TOKENS }}
         with:
+          build-args: |
+            NUXT_PUBLIC_STUDIO_TOKENS=${{ secrets.NUXT_PUBLIC_STUDIO_TOKENS }}
           context: .
           file: ./Dockerfile
           labels: ${{ steps.meta.outputs.labels }}
