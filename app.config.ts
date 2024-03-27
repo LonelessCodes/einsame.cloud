@@ -33,12 +33,7 @@ export default defineAppConfig({
     },
     socials: {
       twitter: 'lonelessart',
-      instagram: '',
-      linkedin: {
-        icon: 'uil:linkedin',
-        label: 'LinkedIn',
-        href: 'https://www.linkedin.com/company/nuxtlabs'
-      }
+      bluesky: "loneless.art",
     },
     form: {
       successMessage: 'Message sent. Thank you!'
