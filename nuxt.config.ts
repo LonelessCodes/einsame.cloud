@@ -3,7 +3,6 @@ export default defineNuxtConfig({
   extends: "@nuxt-themes/alpine",
 
   modules: [
-    "@nuxtjs/plausible",
     "@nuxt/devtools",
     "@nuxthq/studio",
     "@vueuse/nuxt",
@@ -12,5 +11,9 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
-});
 
+  routeRules: {
+    '/': { prerender: true },
+    "/cam": { prerender: true }
+  }
+});
