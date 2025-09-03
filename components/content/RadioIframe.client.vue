@@ -3,7 +3,7 @@
   <div>
     <iframe
       ref="iframe"
-      :src="`https://${station}/embed?theme=${colorMode.value}`"
+      :src="`https://radio.einsame.cloud/public/${station}?theme=${colorMode.value}`"
       frameborder="0"
       scrolling="no"
     ></iframe>
